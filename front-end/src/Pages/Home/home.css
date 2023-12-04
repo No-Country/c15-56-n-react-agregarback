@@ -2,6 +2,7 @@
     font-size: 48px;
     font-weight: bold;
     max-width: 400px;
+    color: black;
 }
 
 .color-green-white{
@@ -9,7 +10,7 @@
 }
 .container-home{
     width: 100%;
-    background-image: url('../../../public/imageBanner.png');
+    background-image: url('imageBanner.png');
     background-size: cover;
     background-position: center;
     height: 88vh;
