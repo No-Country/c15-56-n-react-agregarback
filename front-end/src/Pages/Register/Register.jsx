@@ -12,7 +12,7 @@ export default function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Se puede manejar la logica del envio
-    console.log('Formulario enviado:', { nombre, email, password });
+    alert('Formulario enviado:', { nombre, email, password });
   };
 
   return (
@@ -65,16 +65,15 @@ export default function Register() {
 
                 <input
                     className='button-size-style'
-                    type="confirm-password"
+                    type="password"
                     id="confirm-password"
                     name="confirm-password"
                     placeholder='Confirm Password'
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
                     required
                 />
 
             <button
+              onClick={handleSubmit}
               className='but-create'
               type="submit">Create Account</button>
           </form>
