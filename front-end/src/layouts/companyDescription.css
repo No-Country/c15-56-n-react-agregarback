@@ -1,0 +1,14 @@
+#company-container{
+    
+}
+
+#img-logo-company{
+    background-color: aqua;
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+    overflow:hidden;
+}
+#img-logo-company img {
+    width: 100%;
+}
