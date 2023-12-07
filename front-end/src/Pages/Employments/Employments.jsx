@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './employments.css'
 
 export default function Employments() {
@@ -41,7 +42,7 @@ export default function Employments() {
                         </span>
                     </div>
                     <img src="Favorito.svg" alt="Icon Favorito" />
-                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'>More details</a>
+                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'><Link to={'/employments-details'}>More details</Link></a>
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>
@@ -64,7 +65,7 @@ export default function Employments() {
                         </span>
                     </div>
                     <img src="Favorito.svg" alt="Icon Favorito" />
-                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'>More details</a>
+                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'><Link to={'/employments-details'}>More details</Link></a>
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>
@@ -87,7 +88,7 @@ export default function Employments() {
                         </span>
                     </div>
                     <img src="Favorito.svg" alt="Icon Favorito" />
-                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'>More details</a>
+                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'><Link to={'/employments-details'}>More details</Link></a>
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>
@@ -110,7 +111,7 @@ export default function Employments() {
                         </span>
                     </div>
                     <img src="Favorito.svg" alt="Icon Favorito" className='max-w-[54] max-h-[54px]'/>
-                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'>More details</a>
+                    <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'><Link to={'/employments-details'}>More details</Link></a>
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>

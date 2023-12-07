@@ -6,6 +6,7 @@ import Login from './Pages/Login/Login'
 import Employments from './Pages/Employments/Employments'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Register from './Pages/Register/Register'
+import EmploymentsDetails from './Pages/EmploymentDetails/EmploymentDetails'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route exact path='/' element={<Home/>} />    
         <Route exact path='/register' element={<Register/>} />
         <Route exact path='/login' element={<Login/>} /> 
-        <Route exact path='/employments' element={<Employments/>} />    
+        <Route exact path='/employments' element={<Employments/>} />
+        <Route exact path='/employments-details' element={<EmploymentsDetails/>} /> 
       </Routes>
       <Footer/>
     </BrowserRouter>
