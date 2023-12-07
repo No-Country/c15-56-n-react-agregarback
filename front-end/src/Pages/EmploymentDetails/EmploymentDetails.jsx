@@ -2,6 +2,7 @@ import CompanyDescription from "../../layouts/CompanyDescription";
 import JobDescription from "../../layouts/JobDescription";
 import logo from "../../assets/mercado.jpeg";
 import "./EmploymentDetails.css";
+import { Link } from "react-router-dom";
 
 export default function EmployementDetails() {
   const descCompany = JSON.stringify({
@@ -35,7 +36,7 @@ export default function EmployementDetails() {
       className="flex flex-col text-center"
     >
       <div id="title-area" className="p-4 z-30">
-        <img id="back-icon" src="arrow-left-back.svg" />
+        <Link to={'/employments'}><img id="back-icon" src="arrow-left-back.svg" /></Link>
         <h1 className="font-semibold text-4xl">Job Details</h1>
       </div>
       <div
