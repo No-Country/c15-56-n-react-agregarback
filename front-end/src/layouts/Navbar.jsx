@@ -1,19 +1,10 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'Employments', href: '#', current: false },
-  { name: 'Devs', href: '#', current: false },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+import { Link, NavLink } from 'react-router-dom'
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-white">
+    <Disclosure as="nav" className="navbar">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -31,56 +22,70 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <Link className="flex flex-shrink-0 items-center" to={'/'}>
                   <img
                     className="h-8 w-auto"
                     src="heremenowlogo.svg"
                     alt="Here Me Now!"
                   />
-                </div>
+                </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                      <NavLink to={'/'}
+                        className={'rounded-md px-3 py-2 navLinkItem'}
                       >
-                        {item.name}
-                      </a>
-                    ))}
+                        Home
+                      </NavLink>
+                      <NavLink
+                        to={'/employments'}
+                        className={'rounded-md px-3 py-2 navLinkItem'}
+                      >
+                        Employments
+                      </NavLink>
+                      <NavLink
+                        to={'/devs'}
+                        className={'rounded-md px-3 py-2 navLinkItem'}
+                      >
+                        Devs
+                      </NavLink>
                   </div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a className={'bg-blue-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium mr-2'
-                        }>Log In</a>
-                <a className={'bg-green-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
-                        }>Sign In</a>
+                <NavLink to={'/login'} className={'bg-blue-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium mr-2'
+                        }>Log In</NavLink>
+                <NavLink to={'/register'} className={'bg-green-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
+                        }>Sign In</NavLink>
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
                   as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                  href="#"
+                  className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'}
                 >
-                  {item.name}
+                  <NavLink
+                        to={'/'}
+                        className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                      >
+                        Home
+                      </NavLink>
+                      <NavLink
+                        to={'/employments'}
+                        className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                      >
+                        Employments
+                      </NavLink>
+                      <NavLink
+                        to={'/devs'}
+                        className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                      >
+                        Devs
+                      </NavLink>
                 </Disclosure.Button>
-              ))}
             </div>
           </Disclosure.Panel>
         </>
