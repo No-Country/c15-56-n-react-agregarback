@@ -1,93 +1,71 @@
-/* NAVBAR
-
-.navbar {
-    position: relative;
-    background-color: white;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  }
-  
-  .navLinkItem {
-    font-size: 18px;
-    color: rgb(7, 7, 7);
-  }
-  
-  .navLinkItem:hover {
-    font-weight: bold;
-  }
-  
-  .navLinkItem.active {
-    font-weight: bold;
-  } */
-
-  
-  .container-footer {
+.container-footer {
     background-color: rgb(0, 0, 48);
     padding: 70px 0;
-  }
+}
   
-  .section1-footer {
+.section1-footer {
     display: flex;
     gap: 150px;
     justify-content: center;
-  }
+}
   
-  .title-footer {
+.title-footer {
     color: white;
     font-size: 38px;
     font-weight: bold;
     letter-spacing: 1px;
-  }
+}
   
-  .section1-nav-footer {
+.section1-nav-footer {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .item-nav-footer {
+  item-nav-footer {
     margin-bottom: 10px;
     font-size: 18px;
     color: rgb(157, 157, 158);
-  }
+}
   
-  .item-nav-footer:hover {
+.item-nav-footer:hover {
     color: white;
-  }
+}
   
-  .title-nos-footer {
+.title-nos-footer {
     color: #0CFBA7;
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
-  }
+}
   
-  .names-footer {
+.names-footer {
     font-size: 18px;
     color: #0A66C2;
-  }
+}
   
-  .name-footer:hover {
+.name-footer:hover {
     text-decoration: underline;
-  }
+}
   
-  .links-contact-footer {
+.links-contact-footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: rgb(157, 157, 158);
     font-size: 18px;
-  }
+}
   
-  .links-contact-footer a:hover {
+.links-contact-footer a:hover {
     text-decoration: underline;
     color: white;
-  }
+}
   
-  .section2-footer {
+.section2-footer {
     text-align: center;
     margin-top: 50px;
     font-size: 18px;
     letter-spacing: 1px;
-  }
-  .copy-letras{
+}
+.copy-letras{
     color: white;
-  }
+}
