@@ -16,5 +16,12 @@
 .navLinkItem.active {
     font-weight: bold;
 }
-
+.hereMeNowNav{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+.nowNav{
+    color: #6BB5FB;
+}
   

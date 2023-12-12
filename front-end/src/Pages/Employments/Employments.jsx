@@ -8,7 +8,7 @@ export default function Employments() {
     return (
         <div className="container-employ">
             <div className="main-employ">
-                <span>
+                <span className='cont-text-search'>
                 <h1 className='title-employ'>Find your dream jobs through <span style={{color: "#4466FB"}}>HereMeNow</span> easily!</h1>
                 <input type="text" placeholder='Search' className='search-employ' value={text} onChange={(e) => setText(e.target.value)}/>
                 </span>
@@ -23,6 +23,8 @@ export default function Employments() {
                 <label className='label-checkbox'><input type="checkbox" name='checkboxdevsops' className='input-checkbox' />DevOps</label>
                 <label className='label-checkbox'><input type="checkbox" name='checkboxpm' className='input-checkbox' />Proyect Manager</label>
             </div>
+
+            <section className='pedro'>
             <div className='vista-employ'>
                 <h1 className='title-vista-employ'>Desarrollador Full-Stack MERN</h1>
                 <div className='vista-employ-columns grid grid-cols-6 gap-5'>
@@ -115,6 +117,8 @@ export default function Employments() {
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>
+
+            </section>
             <div className="navigation-employ">
                 <a href="#" className='btn-nav-employ'>{"<< Previous"}</a>
                 <div className="nav-num-employ">

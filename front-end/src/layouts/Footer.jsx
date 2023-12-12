@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="container-footer">
       <div className="section1-footer">
         <h1 className="title-footer">
-          HereMe<span style={{ color: "rgb(74, 255, 255)" }}>Now</span>!
+          HereMe<span style={{ color: "#6BB5FB" }}>Now</span>!
         </h1>
         <div className="section1-nav-footer">
           <NavLink to={"/"} className="item-nav-footer">

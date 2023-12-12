@@ -24,11 +24,7 @@ export default function NavBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <Link className="flex flex-shrink-0 items-center" to={'/'}>
-                  <img
-                    className="h-8 w-auto"
-                    src="heremenowlogo.svg"
-                    alt="Here Me Now!"
-                  />
+                  <p className='hereMeNowNav'>HereMe<span className='nowNav'>Now</span>!</p>
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -56,7 +52,7 @@ export default function NavBar() {
                 <NavLink to={'/login'} className={'bg-blue-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium mr-2'
                         }>Log In</NavLink>
                 <NavLink to={'/register'} className={'bg-green-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
-                        }>Sign In</NavLink>
+                        }>Sign Up</NavLink>
               </div>
             </div>
           </div>
