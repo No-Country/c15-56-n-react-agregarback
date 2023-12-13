@@ -2,12 +2,19 @@ import './register.css'
 import imgGoogle from '../../assets/google.png'
 import imgFacebook from '../../assets/facebook.png'
 import { useForm } from 'react-hook-form'
+import { registerRequest } from '../../api/auth'
 
 
 
 export default function Register() {
 
   const { register, handleSubmit } = useForm();
+
+  const onSubmit = handleSubmit(async(values) => {
+    console.log(values)
+    const res = await registerRequest(values)
+    console.log(res)
+  })
 
   return (
     <>
@@ -23,9 +30,7 @@ export default function Register() {
               <div className='cont-facebook'><img src={imgFacebook} alt="" className='img-facebook'/><button>Facebook</button></div>
             </div>
             <p>Or continue with</p>
-            <form className='form-register' onSubmit={handleSubmit(values => {
-              console.log(values)
-            })}>
+            <form className='form-register' onSubmit={onSubmit}>
                 <input className='button-size-style' type="text" {...register("username",{ required: true })} placeholder='Full Name' />
 
                 <input className='button-size-style' type="email" {...register("email",{required: true})} placeholder='Enter Email' />
