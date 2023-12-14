@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { useAuth } from '../../context/AuthContext'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function Register() {
@@ -16,7 +17,7 @@ export default function Register() {
 
   useEffect(() => {
     if (isAuthenticated) navigate("/login");
-  },[isAuthenticated]);
+  },);
 
   const onSubmit = handleSubmit(async(values) => {
     // console.log(values)
@@ -60,7 +61,7 @@ export default function Register() {
               Create Account
             </button>
           </form>
-          <p>Have an account? <span className='reg-sign-in'>Sign in!</span></p>
+          <p>Have an account? <span className='reg-sign-in'><Link to={'/login'}>Sign in!</Link></span></p>
           <p className='p-terms-use'>By continuing you indicate that ytou read and agreed to the Terms of Use</p>
         </div>
       </div>

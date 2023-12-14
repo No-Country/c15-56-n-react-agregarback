@@ -94,3 +94,10 @@
 .p-terms-use{
     color: #5A5A5A;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .img-login{
+        display: none;
+    }
+
+}
