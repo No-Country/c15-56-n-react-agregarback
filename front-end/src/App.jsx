@@ -8,9 +8,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./Pages/Register/Register";
 import EmploymentsDetails from "./Pages/EmploymentDetails/EmploymentDetails";
 import Devs from "./Pages/Devs/Devs";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
+
+    <AuthProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -23,6 +26,8 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+
+    </AuthProvider>
   );
 }
 

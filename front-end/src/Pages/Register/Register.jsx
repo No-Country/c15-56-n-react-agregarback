@@ -2,18 +2,27 @@ import './register.css'
 import imgGoogle from '../../assets/google.png'
 import imgFacebook from '../../assets/facebook.png'
 import { useForm } from 'react-hook-form'
-import { registerRequest } from '../../api/auth'
-
+// import { registerRequest } from '../../api/auth'
+import { useAuth } from '../../context/AuthContext'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Register() {
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, formState:{errors}, } = useForm();
+  const {signup, isAuthenticated} = useAuth()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (isAuthenticated) navigate("/login");
+  },[isAuthenticated]);
 
   const onSubmit = handleSubmit(async(values) => {
-    console.log(values)
-    const res = await registerRequest(values)
-    console.log(res)
+    // console.log(values)
+    // const res = await registerRequest(values)
+    // console.log(res)
+    signup(values)
   })
 
   return (
@@ -32,10 +41,18 @@ export default function Register() {
             <p>Or continue with</p>
             <form className='form-register' onSubmit={onSubmit}>
                 <input className='button-size-style' type="text" {...register("username",{ required: true })} placeholder='Full Name' />
-
+                {
+                  errors.username && <p className='text-red-500'>Username is required</p>
+                }
                 <input className='button-size-style' type="email" {...register("email",{required: true})} placeholder='Enter Email' />
+                {
+                  errors.email && <p className='text-red-500'>Email is required</p>
+                }
               
                 <input className='button-size-style' type="password"  {...register("password",{required: true})} placeholder='Password' />
+                {
+                  errors.password && <p className='text-red-500'>Password is required</p>
+                }
 {/* 
                 <input className='button-size-style' type="password" id="confirm-password" name="confirm-password" placeholder='Confirm Password'  required /> */}
 
