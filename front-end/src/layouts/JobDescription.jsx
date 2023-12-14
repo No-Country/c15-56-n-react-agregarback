@@ -1,4 +1,5 @@
 import "./jobDescription.css";
+import Swal from "sweetalert2";
 
 export default function JobDescription({ description }) {
   const desc = JSON.parse(description);
@@ -17,6 +18,15 @@ export default function JobDescription({ description }) {
     "November",
     "December",
   ];
+
+  const alertFunc = (e) => {
+    e.preventDefault();
+    Swal.fire({
+      title: "Congratulations!",
+      text: "Your application was send!",
+      icon: "success",
+    });
+  };
   return (
     <div
       id="jobdescriptio-container"
@@ -36,6 +46,7 @@ export default function JobDescription({ description }) {
         <button
           id="applynow-btn"
           className="bg-sky-200 px-6 py-3 rounded-3xl text-sky-600"
+          onClick={alertFunc}
         >
           Apply Now
         </button>
