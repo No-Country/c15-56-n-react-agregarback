@@ -1,8 +1,17 @@
 import express from 'express';
-import morgan from 'morgan'
+import morgan from 'morgan';
+import employmentsRoutes from './routes/employments.routes.js'
 
 const app = express();
 
-app.use(morgan('dev'))
+app.use(morgan('dev'));
+app.use(express.json());
 
-export default app
+app.get('/', (req, res) => {
+  res.json("Api de empleos de HereMeNow");
+});
+
+app.use('/employments', employmentsRoutes)
+
+export default app;
+
