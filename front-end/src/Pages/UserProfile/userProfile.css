@@ -1,0 +1,71 @@
+.container-profile {
+  background-color: #eff6f2;
+  padding: 35px 60px;
+}
+
+.user-profile {
+  display: flex;
+  gap: 100px;
+  background-color: white;
+  padding: 20px 60px 45px 60px;
+  border-radius: 30px;
+}
+
+.usersocial-profile {
+  flex-direction: column;
+}
+
+.img-profile {
+  width: 55vw;
+}
+
+.usermedias-profile {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redsocial-profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.redsocial-profile p {
+  color: black;
+  font-weight: bold;
+}
+
+.userabout-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.userjob-profile {
+  color: #5c5c5c;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.username-profile {
+  color: black;
+  font-weight: bold;
+  font-size: 3.2rem;
+  padding: 5px 0;
+}
+
+.usertextabout-profile {
+  color: rgb(69, 69, 69);
+  font-size: 1.3rem;
+  padding: 20px 0;
+}
+
+.userskills-profile {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px 0;
+}
