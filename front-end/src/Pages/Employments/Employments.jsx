@@ -27,7 +27,7 @@ export default function Employments() {
             <section className='pedro'>
             <div className='vista-employ'>
                 <h1 className='title-vista-employ'>Desarrollador Full-Stack MERN</h1>
-                <div className='vista-employ-columns grid grid-cols-6 gap-5'>
+                <div className='vista-employ-columns'>
                     <p className='team-vista-employ'>Maximo Team</p>
                     <div className="salary-employ">
                         <img src="icSalary.svg" alt="Icon Salary" />
@@ -48,9 +48,9 @@ export default function Employments() {
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
             </div>
-            <div className='vista-employ'>
+            {/* <div className='vista-employ'>
                 <h1 className='title-vista-employ'>Desarrollador Full-Stack MEAN</h1>
-                <div className='vista-employ-columns grid grid-cols-6 gap-5'>
+                <div className='vista-employ-columns grid grid-cols-6'>
                     <p className='team-vista-employ'>Maximo Team</p>
                     <div className="salary-employ">
                         <img src="icSalary.svg" alt="Icon Salary" />
@@ -73,7 +73,7 @@ export default function Employments() {
             </div>
             <div className='vista-employ'>
                 <h1 className='title-vista-employ'>Desarrollador Full-Stack JAVA</h1>
-                <div className='vista-employ-columns grid grid-cols-6 gap-5'>
+                <div className='vista-employ-columns grid grid-cols-6'>
                     <p className='team-vista-employ'>Maximo Team</p>
                     <div className="salary-employ">
                         <img src="icSalary.svg" alt="Icon Salary" />
@@ -96,7 +96,7 @@ export default function Employments() {
             </div>
             <div className='vista-employ'>
                 <h1 className='title-vista-employ'>Desarrollador Full-Stack PHP</h1>
-                <div className='vista-employ-columns grid grid-cols-6 gap-5'>
+                <div className='vista-employ-columns grid grid-cols-6'>
                     <p className='team-vista-employ'>Maximo Team</p>
                     <div className="salary-employ">
                         <img src="icSalary.svg" alt="Icon Salary" />
@@ -116,7 +116,7 @@ export default function Employments() {
                     <a href="#" className='btndetail-vista-emloy w-[200px] h-[75px]'><Link to={'/employments-details'}>More details</Link></a>
                     <a href="#" className='btnaplly-vista-employ max-w-[200px] max-h-[75px]'>Apply Now</a>
                 </div>
-            </div>
+            </div> */}
 
             </section>
             <div className="navigation-employ">

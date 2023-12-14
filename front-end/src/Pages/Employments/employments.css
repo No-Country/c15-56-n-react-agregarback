@@ -19,11 +19,22 @@
     color: #1F2131;
     width: 500px;
 }
-
+.pedro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
 .maletin-employ {
     filter: drop-shadow(2px 15px 23px rgba(0, 0, 0, 0.75));
 }
-
+.vista-employ-columns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
 .search-employ {
     color: black;
     background-color: white;
@@ -55,8 +66,8 @@ input[type="checkbox"] {
 }
 
 .vista-employ {
+    width: 80%;
     background-color: white;
-    margin: 80px 40px;
     padding: 10px 20px 40px 20px;
     border-radius: 30px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -163,16 +174,7 @@ input[type="checkbox"] {
     color: white;
 }
 
-@media (max-width: 1100px) {
-    .vista-employ-columns {
-        margin-top: 35px;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 1023px) {
     .maletin-employ{
         display: none;
     }
@@ -181,5 +183,19 @@ input[type="checkbox"] {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .container-checkboxes{
+        flex-direction: column;
+    }
+    .vista-employ-columns {
+        margin-top: 35px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+    .title-vista-employ{
+        font-size: 20px;
     }
 }
