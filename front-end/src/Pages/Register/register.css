@@ -93,4 +93,21 @@
 }
 .p-terms-use{
     color: #5A5A5A;
+    font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .img-register{
+        display: none;
+    }
+    .right-form {
+        width: 100%;
+    }
+    .p-terms-use{
+        text-align: center;
+    }
+    .right-form{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

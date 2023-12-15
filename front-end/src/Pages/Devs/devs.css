@@ -77,7 +77,9 @@ input[type="checkbox"] {
   font-weight: bold;
   letter-spacing: 1px;
 }
-
+.img-devs{
+  border-radius: 200px;
+}
 @media (min-width: 320px) and (max-width: 1024px) {
   .title-devs {
     font-size: 1.6rem;

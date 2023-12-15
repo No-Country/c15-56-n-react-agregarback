@@ -85,3 +85,16 @@
     flex-direction: column;
   }
 }
+.copy-letras{
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+.section1-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+}
+}

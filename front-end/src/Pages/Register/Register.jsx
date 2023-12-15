@@ -1,19 +1,30 @@
 import './register.css'
 import imgGoogle from '../../assets/google.png'
 import imgFacebook from '../../assets/facebook.png'
+import { useForm } from 'react-hook-form'
+// import { registerRequest } from '../../api/auth'
+import { useAuth } from '../../context/AuthContext'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-import { useState } from 'react';
 
 export default function Register() {
-  const [nombre, setNombre] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Se puede manejar la logica del envio
-    alert('Formulario enviado:', { nombre, email, password });
-  };
+  const { register, handleSubmit, formState:{errors}, } = useForm();
+  const {signup, isAuthenticated} = useAuth()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (isAuthenticated) navigate("/login");
+  },);
+
+  const onSubmit = handleSubmit(async(values) => {
+    // console.log(values)
+    // const res = await registerRequest(values)
+    // console.log(res)
+    signup(values)
+  })
 
   return (
     <>
@@ -29,55 +40,28 @@ export default function Register() {
               <div className='cont-facebook'><img src={imgFacebook} alt="" className='img-facebook'/><button>Facebook</button></div>
             </div>
             <p>Or continue with</p>
-            <form className='form-register' onSubmit={handleSubmit}>
-                <input
-                    className='button-size-style'
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder='Full Name'
-                    value={nombre}
-                    onChange={(e) => setNombre(e.target.value)}
-                    required
-                />
-
-                <input
-                    className='button-size-style'
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder='Enter Email'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
+            <form className='form-register' onSubmit={onSubmit}>
+                <input className='button-size-style' type="text" {...register("username",{ required: true })} placeholder='Full Name' />
+                {
+                  errors.username && <p className='text-red-500'>Username is required</p>
+                }
+                <input className='button-size-style' type="email" {...register("email",{required: true})} placeholder='Enter Email' />
+                {
+                  errors.email && <p className='text-red-500'>Email is required</p>
+                }
               
-                <input
-                    className='button-size-style'
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder='Password'
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
+                <input className='button-size-style' type="password"  {...register("password",{required: true})} placeholder='Password' />
+                {
+                  errors.password && <p className='text-red-500'>Password is required</p>
+                }
+{/* 
+                <input className='button-size-style' type="password" id="confirm-password" name="confirm-password" placeholder='Confirm Password'  required /> */}
 
-                <input
-                    className='button-size-style'
-                    type="password"
-                    id="confirm-password"
-                    name="confirm-password"
-                    placeholder='Confirm Password'
-                    required
-                />
-
-            <button
-              onClick={handleSubmit}
-              className='but-create'
-              type="submit">Create Account</button>
+            <button type="submit" className='but-create'>
+              Create Account
+            </button>
           </form>
-          <p>Have an account? <span className='reg-sign-in'>Sign in!</span></p>
+          <p>Have an account? <span className='reg-sign-in'><Link to={'/login'}>Sign in!</Link></span></p>
           <p className='p-terms-use'>By continuing you indicate that ytou read and agreed to the Terms of Use</p>
         </div>
       </div>
