@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./Pages/Register/Register";
 import EmploymentsDetails from "./Pages/EmploymentDetails/EmploymentDetails";
 import Devs from "./Pages/Devs/Devs";
+import UserProfile from "./Pages/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           path="/employments-details"
           element={<EmploymentsDetails />}
         />
+        <Route exact path="/dev-profile" element={<UserProfile />} />
       </Routes>
       <Footer />
     </BrowserRouter>
