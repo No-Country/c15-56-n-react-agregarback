@@ -9,6 +9,7 @@ import Register from "./Pages/Register/Register";
 import EmploymentsDetails from "./Pages/EmploymentDetails/EmploymentDetails";
 import Devs from "./Pages/Devs/Devs";
 import { AuthProvider } from "./context/AuthContext";
+import UserProfile from "./Pages/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/employments" element={<Employments />} />
         <Route exact path="/devs" element={<Devs />} />
         <Route exact path="/employments-details" element={<EmploymentsDetails />} />
+        <Route exact path="/dev-profile" element={<UserProfile />} />
       </Routes>
       <Footer />
     </BrowserRouter>
