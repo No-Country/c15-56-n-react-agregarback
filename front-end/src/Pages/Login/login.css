@@ -1,0 +1,103 @@
+.container-login{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.img-login{
+    width: 50vw;
+}
+.img-size-login{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F0F2F5;
+    width: 50%;
+    gap: 15px;
+}
+.form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.color-celeste{
+    color: #6BB5FB;
+}
+.color-login-into{
+    color: black;
+}
+.h1-login{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.color-black{
+    color: black;
+}
+.cont-google-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.img-google, .img-facebook{
+    width: 20px;
+    height: 20px;
+}
+.cont-google, .cont-facebook{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px 15px 7px 15px;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #DEDEDE;
+}
+.cont-google:hover, .cont-facebook:hover{
+    cursor: pointer;
+}
+.cont-google:hover{
+    border: 1px solid #20DC49;
+}
+.cont-facebook:hover{
+    border: 1px solid blue;
+}
+.button-size-style{
+    padding-left: 20px;
+    width: 300px;
+    border-radius: 50px;
+    height: 50px;
+    border: 1px solid #D9D9D9;
+}
+.but-log-in{
+    background-color: #2a66ffce !important;
+    padding-left: 20px;
+    width: 300px;
+    border-radius: 50px;
+    height: 50px;
+    border: 1px solid #5A5A5A;
+}
+.reg-sign-in{
+    color: #20DC49;
+}
+.reg-sign-in:hover{
+    cursor: pointer;
+}
+.p-terms-use{
+    color: #5A5A5A;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .img-login{
+        display: none;
+    }
+
+}

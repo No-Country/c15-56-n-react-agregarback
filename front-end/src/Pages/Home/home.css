@@ -1,0 +1,45 @@
+.h1-home{
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+.color-green-white{
+    color: #338573;
+}
+.container-home{
+    width: 100%;
+    background-image: url('../../../public/imageBanner.png');
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+}
+.home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+.button-opportunities{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #6BB5FB;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+}
+@media (min-width: 320px) and (max-width: 900px){
+    .home-text{
+        width: 100%;
+        padding: 20px;
+    }
+    .container-home{
+        background-image: none;
+        background-color: #EFF6F2;
+    }
+    .button-opportunities{
+        font-size: 28px;
+    }
+}
