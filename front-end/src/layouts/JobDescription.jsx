@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./jobDescription.css";
-import Swal from "sweetalert2";
+import Modal from "../components/Modal";
 
 export default function JobDescription({ description }) {
+  const [modalOpen, setModalOpen] = useState(false);
   const desc = JSON.parse(description);
   const date = new Date(desc.date);
   const months = [
@@ -19,14 +21,11 @@ export default function JobDescription({ description }) {
     "December",
   ];
 
-  const alertFunc = (e) => {
+  const modalFunc = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Congratulations!",
-      text: "Your application was send!",
-      icon: "success",
-    });
+    setModalOpen(true);
   };
+
   return (
     <div
       id="jobdescriptio-container"
@@ -46,7 +45,7 @@ export default function JobDescription({ description }) {
         <button
           id="applynow-btn"
           className="bg-sky-200 px-6 py-3 rounded-3xl text-sky-600"
-          onClick={alertFunc}
+          onClick={modalFunc}
         >
           Apply Now
         </button>
@@ -82,6 +81,7 @@ export default function JobDescription({ description }) {
         </h2>
         <p className="text-left">{desc.description}</p>
       </div>
+      <Modal isOpen={modalOpen} isClosed={() => setModalOpen(false)} />
     </div>
   );
 }
