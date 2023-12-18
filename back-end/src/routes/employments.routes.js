@@ -1,9 +1,11 @@
-import {Router} from 'express'
-const router = Router()
-import * as employmentsCtrl from '../controllers/employments.controller.js'
-router.post('/', employmentsCtrl.createEmployment)
-router.get('/', employmentsCtrl.getEmployments)
-router.get('/:employmentId', employmentsCtrl.getEmploymentByID)
-router.put('/:employmentId', employmentsCtrl.updateEmploymentByID)
-router.delete('/:employmentId', employmentsCtrl.deleteEmploymentByID)
+import { Router } from 'express';
+import * as employmentsCtrl from '../controllers/employments.controller.js';
+import { authRequired } from '../middlewares/validateToken.js';
+const router = Router();
+router.post('/employments', authRequired, employmentsCtrl.createEmployment);
+router.get('/employments',  employmentsCtrl.getEmployments);
+router.get('/:employmentId', authRequired, employmentsCtrl.getEmploymentByID);
+router.put('/:employmentId', authRequired,  employmentsCtrl.updateEmploymentByID);
+router.delete('/:employmentId', authRequired,  employmentsCtrl.deleteEmploymentByID);
+
 export default router;

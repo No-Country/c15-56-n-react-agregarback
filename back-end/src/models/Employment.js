@@ -29,7 +29,9 @@ const employmentSchema = new Schema({
   numberOfEmployees: {
     type: Number,
     required: true,
-  },
+  }
+},{
+  timestamps: true
 });
 
 export default model('Employment', employmentSchema);
