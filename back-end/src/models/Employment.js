@@ -7,8 +7,7 @@ const employmentSchema = new Schema({
   },
   company: {
     type: String,
-    required: true,
-    unique: true,
+    required: true
   },
   salary: {
     type: Number,

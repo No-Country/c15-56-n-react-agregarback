@@ -8,6 +8,7 @@ export const createEmployment = async (req, res) => {
     if (!title || !company || !salary || !location || !description || !aboutCompany || !numberOfEmployees) {
       return res.status(400).json({ error: 'Todos los campos son obligatorios.' });
     }
+
     const newEmployment = new Employment({
       title,
       company,
