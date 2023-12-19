@@ -1,18 +1,15 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./employments.css";
-import Swal from "sweetalert2";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './employments.css';
+import Modal from '../../components/Modal';
 
 export default function Employments() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
+  const [modalOpen, setModalOpen] = useState(false);
 
-  const alertFunc = (e) => {
+  const modalFunc = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Congratulations!",
-      text: "Your application was send!",
-      icon: "success",
-    });
+    setModalOpen(true);
   };
 
   return (
@@ -20,8 +17,8 @@ export default function Employments() {
       <div className="main-employ">
         <span>
           <h1 className="title-employ">
-            Find your dream jobs through{" "}
-            <span style={{ color: "#4466FB" }}>HereMeNow</span> easily!
+            Find your dream jobs through{' '}
+            <span style={{ color: '#4466FB' }}>HereMeNow</span> easily!
           </h1>
           <input
             type="text"
@@ -103,9 +100,9 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="" className="btnaplly-vista-employ" onClick={alertFunc}>
+          <a href="" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
@@ -130,9 +127,9 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
@@ -157,9 +154,9 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
@@ -188,16 +185,16 @@ export default function Employments() {
             className="max-w-[54] max-h-[54px]"
           />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
       </div>
       <div className="navigation-employ">
         <a href="#" className="btn-nav-employ">
-          {"<< Previous"}
+          {'<< Previous'}
         </a>
         <div className="nav-num-employ">
           <span>1</span>
@@ -206,9 +203,10 @@ export default function Employments() {
           <span>4</span>
         </div>
         <a href="#" className="btn-nav-employ">
-          {"Next >>"}
+          {'Next >>'}
         </a>
       </div>
+      <Modal isOpen={modalOpen} isClosed={() => setModalOpen(false)} />
     </div>
   );
 }
