@@ -42,8 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  margin-top: 50px;
+  gap: 10px;
 }
 
 .label-checkbox {
@@ -180,12 +179,11 @@ input[type="checkbox"] {
   color: white;
 }
 
-@media (max-width: 1100px) {
-  .vista-employ-columns {
-    margin-top: 35px;
-    display: flex !important;
+@media (min-width: 320px) and (max-width: 900px){
+  .container-checkboxes{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .maletin-employ{
+    display: none;
   }
 }
