@@ -1,27 +1,24 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import "./employments.css";
-import Swal from "sweetalert2";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './employments.css';
+import Modal from '../../components/Modal';
 
 export default function Employments() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
+  const [modalOpen, setModalOpen] = useState(false);
 
-  const alertFunc = (e) => {
+  const modalFunc = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Congratulations!",
-      text: "Your application was send!",
-      icon: "success",
-    });
+    setModalOpen(true);
   };
 
   return (
     <div className="container-employ">
       <div className="main-employ">
-        <span>
+        <span className='const-title-search'>
           <h1 className="title-employ">
-            Find your dream jobs through{" "}
-            <span style={{ color: "#4466FB" }}>HereMeNow</span> easily!
+            Find your dream jobs through{' '}
+            <span style={{ color: '#4466FB' }}>HereMeNow</span> easily!
           </h1>
           <input
             type="text"
@@ -83,19 +80,20 @@ export default function Employments() {
           Proyect Manager
         </label>
       </div>
+      <section className='cont-all-employs'>
       <div className="vista-employ">
         <h1 className="title-vista-employ">Desarrollador Full-Stack MERN</h1>
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local'/>
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local'/>
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -103,26 +101,26 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="" className="btnaplly-vista-employ" onClick={alertFunc}>
+          <a href="" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
       </div>
-      <div className="vista-employ">
+      {/* <div className="vista-employ">
         <h1 className="title-vista-employ">Desarrollador Full-Stack MEAN</h1>
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -130,9 +128,9 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
@@ -142,14 +140,14 @@ export default function Employments() {
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -157,9 +155,9 @@ export default function Employments() {
           </div>
           <img src="Favorito.svg" alt="Icon Favorito" />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
@@ -169,14 +167,14 @@ export default function Employments() {
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -188,27 +186,28 @@ export default function Employments() {
             className="max-w-[54] max-h-[54px]"
           />
           <a href="#" className="btndetail-vista-emloy">
-            <Link to={"/employments-details"}>More details</Link>
+            <Link to={'/employments-details'}>More details</Link>
           </a>
-          <a href="#" className="btnaplly-vista-employ">
+          <a href="#" className="btnaplly-vista-employ" onClick={modalFunc}>
             Apply Now
           </a>
         </div>
-      </div>
+      </div> */}
+      </section>
       <div className="navigation-employ">
         <a href="#" className="btn-nav-employ">
-          {"<< Previous"}
+          {'<< Previous'}
         </a>
         <div className="nav-num-employ">
           <span>1</span>
           <span>2</span>
           <span>3</span>
-          <span>4</span>
         </div>
         <a href="#" className="btn-nav-employ">
-          {"Next >>"}
+          {'Next >>'}
         </a>
       </div>
+      <Modal isOpen={modalOpen} isClosed={() => setModalOpen(false)} />
     </div>
   );
 }
