@@ -5,7 +5,7 @@ export default function UserProfile() {
     <div className="container-profile">
       <div className="user-profile">
         <div className="usersocial-profile">
-          <img src="alejoc.svg" alt="Alejo Hurtado" className="img-profile" />
+          <img src="alejoc.svg" alt="Alejo Hurtado" className="img-profile-dev" />
           <div className="usermedias-profile">
             <div className="redsocial-profile">
               <img src="linkedin.svg" alt="Linkedin" />
