@@ -45,13 +45,6 @@ export default function NavBar() {
                       >
                         Devs
                       </NavLink>
-                      <NavLink
-                        to={"/aboutus"}
-                        className={"bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                        }
-                      >
-                        About Us
-                      </NavLink>
                   </div>
                 </div>
               </div>
@@ -69,7 +62,7 @@ export default function NavBar() {
                 <Disclosure.Button
                   as="a"
                   href="#"
-                  className={'hola-mundo bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'}
+                  className={'nav-col-hamb bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'}
                 >
                   <NavLink
                         to={'/'}
@@ -88,12 +81,6 @@ export default function NavBar() {
                         className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                       >
                         Devs
-                      </NavLink>
-                      <NavLink
-                        to={"/aboutus"}
-                        className={"bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"}
-                      >
-                        About Us
                       </NavLink>
                       <NavLink
                         to={'/register'}
