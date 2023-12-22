@@ -31,7 +31,7 @@ export default function JobDescription({ description }) {
       id="jobdescriptio-container"
       className="bg-white text-black p-10 rounded-2xl grid grid-flow-row h-fit basis-3/4"
     >
-      <div className="grid grid-flow-col">
+      <div className="grid grid-flow-col cont-title-apply">
         <div className="col-span-5">
           <h1 className="font-medium text-4xl text-left text-[#363848]">
             {desc.title}
@@ -50,7 +50,7 @@ export default function JobDescription({ description }) {
           Apply Now
         </button>
       </div>
-      <div className="grid grid-flow-col grid-cols-3 px-10 py-10 text-left">
+      <div className="grid grid-flow-col grid-cols-3 px-10 py-10 text-left icons-description">
         <div className="flex flex-row gap-5">
           <img id="money-bag-icon" src="money-bag.svg" />
           <div>

@@ -100,7 +100,7 @@ export default function Devs() {
         </div>
         <div className="profile-dev">
           <Link to={'/dev-profile'}><img src="soledad.svg" className="img-devs" alt="Contreras" /></Link>
-          <p className="name-dev">Salomon Contreras</p>
+          <p className="name-dev">Belén Acosta</p>
           <p className="work-dev">Proyect Manager</p>
         </div>
       </div>
