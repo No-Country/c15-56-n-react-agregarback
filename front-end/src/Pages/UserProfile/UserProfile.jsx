@@ -1,6 +1,17 @@
 import "./userProfile.css";
+import {ModalEmployment} from ".../Components/modalEmployment.jsx"
 
 export default function UserProfile() {
+  
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="container-profile">
       <div className="user-profile">
@@ -24,6 +35,23 @@ export default function UserProfile() {
         <div className="userabout-profile">
           <h1 className="userjob-profile">Front-End</h1>
           <h2 className="username-profile">Alejo Hurtado</h2>
+          <button
+        className="btnaplly-vista-employ"
+        style={{
+          backgroundColor: 'blue',
+          color: 'white',
+          padding: '10px 20px',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          display: 'inline-block',
+          fontSize: '16px'
+        }}
+        onClick={openModal}
+      >
+        Post an employment
+      </button>
+
+      <ModalEmployment isOpen={isModalOpen} onClose={closeModal} />
           <p className="usertextabout-profile">
             Hello! I am Alejo Hurtado, a web designer with a passion for
             creating captivating digital experiences. Throughout my career, I
