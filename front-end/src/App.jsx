@@ -10,27 +10,31 @@ import EmploymentsDetails from "./Pages/EmploymentDetails/EmploymentDetails";
 import Devs from "./Pages/Devs/Devs";
 import { AuthProvider } from "./context/AuthContext";
 import UserProfile from "./Pages/UserProfile/UserProfile";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 
 function App() {
   return (
-
     <AuthProvider>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/register" element={<Register />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/employments" element={<Employments />} />
-        <Route exact path="/devs" element={<Devs />} />
-        <Route exact path="/employments-details" element={<EmploymentsDetails />} />
-        <Route exact path="/dev-profile" element={<UserProfile />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/employments" element={<Employments />} />
+          <Route exact path="/devs" element={<Devs />} />
+          <Route
+            exact
+            path="/employments-details"
+            element={<EmploymentsDetails />}
+          />
+          <Route exact path="/dev-profile" element={<UserProfile />} />
+          <Route exact path="/aboutus" element={<AboutUs />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </AuthProvider>
   );
 }
 
-export default App
+export default App;

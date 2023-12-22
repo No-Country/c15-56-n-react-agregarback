@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import './footer.css'
+import { Link, NavLink } from "react-router-dom";
+import "./footer.css";
 
 export default function Footer() {
   return (
@@ -18,12 +18,15 @@ export default function Footer() {
           <NavLink to={"/devs"} className="item-nav-footer">
             Devs
           </NavLink>
+          <NavLink to={"/aboutus"} className="item-nav-footer">
+            About Us
+          </NavLink>
         </div>
         <div className="links-contact-footer">
-          <a href="#">Contact Us</a>
-          <a href="#">Technical Support</a>
-          <a href="#">Frequently Asked Questions</a>
-          <a href="#">Join Our Team</a>
+          <a href="/aboutus#contact">Contact Us</a>
+          <a href="/aboutus#technicalsupport">Technical Support</a>
+          <a href="/aboutus#frecuentlyquestions">Frequently Asked Questions</a>
+          <a href="/aboutus#joinus">Join Our Team</a>
         </div>
         <div>
           <h2 className="title-nos-footer">No Country c15-56</h2>
@@ -49,7 +52,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a 
+              <a
                 href="https://www.linkedin.com/in/benzum566"
                 className="name-footer"
                 target="_blank"
@@ -64,7 +67,7 @@ export default function Footer() {
                 className="name-footer"
                 target="_blank"
                 rel="noopener noreferrer"
-                >
+              >
                 Escobar, Abdi Daniel
               </a>
             </li>
@@ -72,7 +75,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="section2-footer">
-        <p className="copy-letras">&copy; 2023 HereMeNow! - All rights reserved.</p>
+        <p className="copy-letras">
+          &copy; 2023 HereMeNow! - All rights reserved.
+        </p>
       </div>
     </div>
   );

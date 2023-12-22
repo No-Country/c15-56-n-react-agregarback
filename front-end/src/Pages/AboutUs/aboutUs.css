@@ -1,0 +1,366 @@
+.container-about {
+  background-color: #336385;
+}
+
+.main-about {
+  display: flex;
+  padding: 50px 70px;
+  gap: 40px;
+}
+
+.title-about {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.title-about span {
+  color: #abaaec;
+}
+
+.text-about {
+  font-size: 1.3rem;
+  width: 800px;
+  color: white;
+}
+
+/* CONTACT SECTION */
+.contactcontainer-about {
+  background-color: aliceblue;
+  padding: 60px 0;
+}
+
+.titlecontact-about {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.titlecontact-about span {
+  color: #1990ff;
+}
+
+.contactform-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-about {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.labelcontact-about {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.inputcontact-about {
+  background-color: #dad7d6;
+  display: block;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.btndiv-about {
+  display: flex;
+  justify-content: center;
+}
+
+.btnready-about {
+  font-size: 1.4rem;
+  color: black;
+  margin: 30px 0;
+  padding: 10px 45px;
+  background-color: rgb(210, 183, 255);
+  border-radius: 15px;
+  border: 3px solid rgb(210, 183, 255);
+  transition: all 0.2s ease;
+}
+
+.btnready-about:hover {
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+.redsocialsform-about {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.redsocialicons-about {
+  display: flex;
+  gap: 15px;
+}
+
+.redsocialicons-about img {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.redsocialicons-about img:hover {
+  transform: rotate(15deg);
+}
+
+/* SECTION TECHNICAL SUPPORT */
+
+.technical-about {
+  background-color: #6bb5fb;
+  padding: 70px 100px;
+}
+
+.titletechnical-about {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.titletechnical-about span {
+  color: black;
+}
+
+.technicalsupport-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.formtechnical-about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.selecttechnical-about {
+  background: aliceblue;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.inputtechnical-about {
+  background: transparent;
+  border-bottom: 1px solid black;
+  color: black;
+  background-color: rgb(180, 220, 255);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.inputtechnical-about::placeholder {
+  color: rgb(77, 77, 77);
+}
+
+.btnform-about {
+  display: flex;
+  justify-content: center;
+}
+
+.btntechnical-about {
+  background-color: aliceblue !important;
+  color: #1990ff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: 2px solid aliceblue;
+  transition: all 0.2s ease;
+}
+
+.btntechnical-about:hover {
+  background: transparent !important;
+  color: aliceblue;
+}
+
+/* SECTION FRECUENTLY QUESTION */
+
+.frecuently-about {
+  background-color: #eff6f2;
+  padding: 70px 100px;
+}
+
+.titlefrecu-about {
+  color: black;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.questions-about {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.titquestion-about {
+  color: rgb(61, 61, 61);
+  font-size: 2.1rem;
+  margin-top: 10px;
+}
+
+.texquestion-about {
+  color: #1990ff;
+  font-size: 1.2rem;
+}
+
+/* SECTION WORK WITH US */
+
+.joinus-about {
+  background-color: #ececec;
+  padding: 70px 100px;
+}
+
+.titjoinus-about {
+  color: black;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.tit2joinus-about {
+  color: #abaaec;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.containerformjoinus-about {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.formjoinus-about {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 580px;
+}
+
+.inputjoinus-about {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 5px 20px;
+  color: black;
+}
+
+.btncontainerjoinus-about {
+  display: flex;
+  justify-content: center;
+}
+
+.btnjoinus-about {
+  background-color: #abaaec !important;
+  font-size: 1.8rem;
+  padding: 20px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btnjoinus-about:hover {
+  transform: scale(1.2);
+}
+
+.textjoinusfin-about {
+  margin-top: 15px;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* SECTION ABOUT */
+  .main-about {
+    display: block;
+    padding: 30px 20px;
+  }
+  .title-about {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .text-about {
+    font-size: 1rem;
+    width: auto;
+  }
+
+  /* SECTION CONTACT */
+  .imgcontact-about {
+    display: none;
+  }
+  .labelcontact-about {
+    font-size: 1.2rem;
+  }
+  .inputcontact-about {
+    font-size: 1rem;
+  }
+  .btnready-about {
+    font-size: 1.2rem;
+  }
+
+  /* SECTION TECHNICAL SUPPORT */
+  .technical-about {
+    padding: 30px 20px;
+  }
+  .titletechnical-about {
+    font-size: 2rem;
+  }
+  .imgtechnical-about {
+    display: none;
+  }
+
+  /* SECTION FAQs */
+  .frecuently-about {
+    padding: 30px 20px;
+  }
+  .titlefrecu-about {
+    font-size: 2rem;
+  }
+  .questions-about {
+    display: block;
+  }
+  .titquestion-about {
+    font-size: 1.5rem;
+  }
+  .texquestion-about {
+    font-size: 1rem;
+  }
+
+  /* SECTION WORK WITH US */
+  .joinus-about {
+    padding: 30px 20px;
+  }
+  .titjoinus-about {
+    font-size: 2rem;
+  }
+  .tit2joinus-about {
+    font-size: 1.6rem;
+  }
+  .inputjoinus-about {
+    font-size: 1.2rem;
+  }
+  .btnjoinus-about {
+    font-size: 1.2rem;
+  }
+  .textjoinusfin-about {
+    font-size: 2rem;
+  }
+}
