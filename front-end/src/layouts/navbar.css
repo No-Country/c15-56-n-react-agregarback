@@ -28,4 +28,9 @@
     .button-log-reg{
         display: none !important ;
     }
+    .nav-col-hamb{
+        display: flex !important;
+        flex-direction: column;
+        max-width: 200px;
+    }
 }

@@ -62,7 +62,7 @@ export default function NavBar() {
                 <Disclosure.Button
                   as="a"
                   href="#"
-                  className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'}
+                  className={'nav-col-hamb bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'}
                 >
                   <NavLink
                         to={'/'}
