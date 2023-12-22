@@ -108,7 +108,7 @@ export default function Employments() {
           </a>
         </div>
       </div>
-      {/* <div className="vista-employ">
+      <div className="vista-employ">
         <h1 className="title-vista-employ">Desarrollador Full-Stack MEAN</h1>
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
@@ -192,7 +192,7 @@ export default function Employments() {
             Apply Now
           </a>
         </div>
-      </div> */}
+      </div>
       </section>
       <div className="navigation-employ">
         <a href="#" className="btn-nav-employ">
