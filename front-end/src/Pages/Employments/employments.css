@@ -5,16 +5,19 @@
   gap: 20px;
   padding: 80px 0 80px 0;
 }
+
 .main-employ {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cont-text-search{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.cont-text-search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 .title-employ {
   font-size: 45px;
   font-weight: bold;
@@ -22,21 +25,25 @@
   max-width: 600px;
   padding: 20px 20px 20px 20px;
 }
+
 .maletin-employ {
   filter: drop-shadow(2px 15px 23px rgba(0, 0, 0, 0.75));
 }
-.vista-employ-columns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+
+.vista-employ-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-.const-title-search{
+
+.const-title-search {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .search-employ {
   color: black;
   background-color: white;
@@ -45,40 +52,58 @@
   font-size: 28px;
   box-shadow: 1px 2px 25px 1px rgba(0, 0, 0, 0.75);
 }
+
 .container-checkboxes {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
 }
+
+.containerjob-employ {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconjobs-employ {
+  width: 70px;
+  height: 70px;
+}
+
 .label-checkbox {
   color: #1f2131;
   cursor: pointer;
 }
+
 input[type="checkbox"] {
   border: none;
   border-radius: 30px;
   cursor: pointer;
   margin-right: 5px;
 }
-.cont-all-employs{
+
+.cont-all-employs {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
 }
+
 .vista-employ {
   background-color: white;
   padding: 10px 20px 40px 20px;
   border-radius: 30px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .title-vista-employ {
   color: black;
   font-size: 32px;
   font-weight: bold;
 }
+
 .team-vista-employ {
   color: #5f4bdb;
   font-size: 22px;
@@ -171,7 +196,6 @@ input[type="checkbox"] {
 .nav-num-employ span {
   padding: 15px 25px;
   color: #4466fb;
-
 }
 
 .nav-num-employ span:first-child {
@@ -180,38 +204,38 @@ input[type="checkbox"] {
   color: white;
 }
 
-@media (min-width: 320px) and (max-width: 1024px){
-  .container-checkboxes{
+@media (min-width: 320px) and (max-width: 1024px) {
+  .container-checkboxes {
     flex-direction: column;
   }
-  .maletin-employ{
+  .maletin-employ {
     display: none;
   }
-  .search-employ{
+  .search-employ {
     width: 280px;
   }
-  .vista-employ-columns{
+  .vista-employ-columns {
     flex-direction: column;
   }
-  .vista-employ{
+  .vista-employ {
     max-width: 450px;
   }
 }
-@media (min-width: 320px) and (max-width: 520px){
-  .btn-nav-employ{
+@media (min-width: 320px) and (max-width: 520px) {
+  .btn-nav-employ {
     display: none;
   }
-  .icon-cash-local{
+  .icon-cash-local {
     display: none;
   }
-  .vista-employ-columns{
+  .vista-employ-columns {
     text-align: center;
     gap: 10px;
   }
-  .title-vista-employ{
+  .title-vista-employ {
     font-size: 24px;
   }
-  .vista-employ{
+  .vista-employ {
     width: 80vw;
   }
 }

@@ -35,8 +35,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   margin-top: 50px;
+}
+
+.containerjob-devs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconjobs-devs {
+  width: 70px;
+  height: 70px;
 }
 
 .label-checkbox {
@@ -66,7 +77,6 @@ input[type="checkbox"] {
   align-items: center;
   flex-direction: column;
   min-width: 230px;
-
 }
 
 .name-dev {
@@ -81,9 +91,11 @@ input[type="checkbox"] {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.img-devs{
+
+.img-devs {
   border-radius: 200px;
 }
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .title-devs {
     font-size: 1.6rem;
@@ -102,5 +114,4 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     gap: 30px;
   }
-
 }
