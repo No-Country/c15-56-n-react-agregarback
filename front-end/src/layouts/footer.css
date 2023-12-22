@@ -5,8 +5,7 @@
 
 .section1-footer {
   display: flex;
-  gap: 150px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .title-footer {

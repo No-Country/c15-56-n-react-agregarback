@@ -24,4 +24,8 @@
 .nowNav{
     color: #6BB5FB;
 }
-  
+@media (min-width: 320px) and (max-width: 720px){
+    .button-log-reg{
+        display: none !important ;
+    }
+}

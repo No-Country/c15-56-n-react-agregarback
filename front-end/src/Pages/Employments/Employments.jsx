@@ -15,7 +15,7 @@ export default function Employments() {
   return (
     <div className="container-employ">
       <div className="main-employ">
-        <span>
+        <span className='const-title-search'>
           <h1 className="title-employ">
             Find your dream jobs through{' '}
             <span style={{ color: '#4466FB' }}>HereMeNow</span> easily!
@@ -80,19 +80,20 @@ export default function Employments() {
           Proyect Manager
         </label>
       </div>
+      <section className='cont-all-employs'>
       <div className="vista-employ">
         <h1 className="title-vista-employ">Desarrollador Full-Stack MERN</h1>
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local'/>
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local'/>
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -112,14 +113,14 @@ export default function Employments() {
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -139,14 +140,14 @@ export default function Employments() {
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -166,14 +167,14 @@ export default function Employments() {
         <div className="vista-employ-columns">
           <p className="team-vista-employ">Maximo Team</p>
           <div className="salary-employ">
-            <img src="icSalary.svg" alt="Icon Salary" />
+            <img src="icSalary.svg" alt="Icon Salary" className='icon-cash-local' />
             <span>
               <p className="salary-vista-employ">$14.000 - $25.000</p>
               <p className="paysalary-vista-employ">Monthly salary</p>
             </span>
           </div>
           <div className="location-employ">
-            <img src="icLocation.svg" alt="Icon Location" />
+            <img src="icLocation.svg" alt="Icon Location" className='icon-cash-local' />
             <span>
               <p className="locat-vista-employ">London - England</p>
               <p className="type-vista-employ">Remote/Hybrid</p>
@@ -192,6 +193,7 @@ export default function Employments() {
           </a>
         </div>
       </div>
+      </section>
       <div className="navigation-employ">
         <a href="#" className="btn-nav-employ">
           {'<< Previous'}
@@ -200,7 +202,6 @@ export default function Employments() {
           <span>1</span>
           <span>2</span>
           <span>3</span>
-          <span>4</span>
         </div>
         <a href="#" className="btn-nav-employ">
           {'Next >>'}

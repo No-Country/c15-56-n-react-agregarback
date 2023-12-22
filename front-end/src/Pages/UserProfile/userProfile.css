@@ -5,23 +5,22 @@
 
 .user-profile {
   display: flex;
-  gap: 100px;
+  gap: 40px;
   background-color: white;
   padding: 20px 60px 45px 60px;
   border-radius: 30px;
 }
 
 .usersocial-profile {
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
-
-.img-profile {
-  width: 55vw;
+.img-profile-dev{
+  max-width: 200px;
 }
-
 .usermedias-profile {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   gap: 10px;
 }
@@ -68,4 +67,44 @@
   font-weight: bold;
   font-size: 2rem;
   padding: 10px 0;
+}
+
+@media (min-width: 520px) and (max-width: 750px){
+  .user-profile{
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 30px 25px 30px;
+  }
+  .usersocial-profile{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .container-profile{
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 519px){
+  .user-profile{
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 30px 25px 30px;
+  }
+  .img-profile-dev{
+    max-width: 150px;
+  }
+  .userjob-profile {
+    font-size: 14px;
+  }
+  .username-profile{
+    font-size: 16px;
+  }
+  .userjob-profile{
+    padding: 0;
+  }
+  .usertextabout-profile{
+    font-size: 12px;
+    padding: 0;
+  }
 }

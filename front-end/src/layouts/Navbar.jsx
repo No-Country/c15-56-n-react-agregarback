@@ -48,7 +48,7 @@ export default function NavBar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className=" button-log-reg absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <NavLink to={'/login'} className={'bg-blue-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium mr-2'
                         }>Log In</NavLink>
                 <NavLink to={'/register'} className={'bg-green-500 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
@@ -81,6 +81,18 @@ export default function NavBar() {
                         className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                       >
                         Devs
+                      </NavLink>
+                      <NavLink
+                        to={'/register'}
+                        className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                      >
+                        Register
+                      </NavLink>
+                      <NavLink
+                        to={'/login'}
+                        className={'bg-gray-900 text-white text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                      >
+                        Login
                       </NavLink>
                 </Disclosure.Button>
             </div>
