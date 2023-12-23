@@ -206,7 +206,8 @@ input[type="checkbox"] {
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .container-checkboxes {
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
   }
   .maletin-employ {
     display: none;

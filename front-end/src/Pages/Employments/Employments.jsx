@@ -166,9 +166,9 @@ export default function Employments() {
           </div>
         </div>
         <div className="vista-employ">
-          <h1 className="title-vista-employ">Desarrollador Full-Stack MEAN</h1>
+          <h1 className="title-vista-employ">Lead UI/UX Designer</h1>
           <div className="vista-employ-columns">
-            <p className="team-vista-employ">Maximo Team</p>
+            <p className="team-vista-employ">Gonzales Azul</p>
             <div className="salary-employ">
               <img
                 src="icSalary.svg"
@@ -236,7 +236,7 @@ export default function Employments() {
           </div>
         </div>
         <div className="vista-employ">
-          <h1 className="title-vista-employ">Desarrollador Full-Stack PHP</h1>
+          <h1 className="title-vista-employ">Desarrollador PHP</h1>
           <div className="vista-employ-columns">
             <p className="team-vista-employ">Maximo Team</p>
             <div className="salary-employ">

@@ -106,8 +106,8 @@ input[type="checkbox"] {
   }
   .container-checkboxes-devs {
     align-items: flex-start;
-    flex-direction: column;
-    gap: 0;
+    flex-wrap: wrap;
+    padding: 10px;
   }
   .image-devs {
     /* flex-direction: column; */
