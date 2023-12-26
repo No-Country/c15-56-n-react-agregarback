@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./footer.css";
 
 export default function Footer() {
@@ -49,16 +49,6 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 Hurtado Testa, Alejo
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/benzum566"
-                className="name-footer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Zumaran, Bejamin
               </a>
             </li>
             <li>
